@@ -1,24 +1,29 @@
+<!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
   <title>URL Decode/Encode</title>
+
+  <link rel="stylesheet" href="public/stylesheets/normalize.css">
+  <link rel="stylesheet" href="public/stylesheets/foundation.min.css">
 </head>
 <body>
-  <input role="input" type="url">
+  <section class="row">
+    <ul class="inline-list">
+      <li><a href="#encode">Encode</a></li>
+      <li><a href="#decode">Decode</a></li>
+    </ul>
+  </section>
 
-  <input role="output" type="url">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script>
-  <script src="webtoolkit.url.js"></script>
-  <script>
-    $(document).ready(function() {
-      var method = "decode"
-      var input = $("[role=input]"),
-          output = $("[role=output]")
-      input.bind("input", function(value) {
-        output.val(Url.decode(input.val()))
-      })
-    })
-  </script>
+  <section role="io-view" class="row">
+    <input role="input" type="url" placeholder="Input URL" autofocus>
+    <input role="output" type="url" placeholder="Output URL">
+  </section>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script>
+  <script src="public/javascripts/webtoolkit.url.js"></script>
+  <script src="public/javascripts/app.js"></script>
 </body>
 </html>
