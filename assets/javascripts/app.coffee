@@ -37,3 +37,11 @@ MainView = Backbone.View.extend(
 main_view = new MainView(
   el: $("[role=io-view]")
 )
+
+
+$('[role=copy-to-clipboard]').zclip(
+  path: '/swfs/zero-clipboard.swf'
+  copy:->
+    console.log "sdf"
+    $('input#dynamic').val()
+)
