@@ -30,18 +30,34 @@ MainView = Backbone.View.extend(
 
   onMethodChange: (event, data)->
     @method = data
-    console.log "New method:" + @method
 
 )
-
 main_view = new MainView(
   el: $("[role=io-view]")
 )
 
+ButtonView = Backbone.View.extend(
+  elements: null
+  events:
+    "click .button": "onClick"
+  initialize: ->
+    @elements = @$(".button")
+
+  onClick: (event)->
+    @elements.removeClass("active")
+    $(event.target).addClass("active")
+    $("[role=input]").trigger("input")
+)
+button_view = new ButtonView(
+  el: $(".method-select")
+)
+
+$("[role=output]").click((event)->
+  $(event.target).select()
+)
 
 $('[role=copy-to-clipboard]').zclip(
   path: '/swfs/zero-clipboard.swf'
   copy:->
-    console.log "sdf"
     $('input#dynamic').val()
 )

@@ -1,3 +1,59 @@
+$background: #1c1829;
+$foreground: #f4579e;
+$foreground_dark: #6f0a2d;
+$foreground_secondary: #72c3f6;
+$foreground_secondary_dark: #5d9ec7;
+
+@import "application/overrides";
+@import "application/footer";
+
+body {
+  font-family: 'Inconsolata', courier, sans-serif;
+  color: $foreground;
+}
+
 i.icon-copy {
   cursor: pointer;
+}
+
+
+.method-select {
+  margin-top: 200px;
+  margin-left: 332px;
+  .button {
+    background-color: $foreground_secondary;
+  }
+  .button.active {
+    background-color: $foreground_secondary_dark;
+    color: $foreground_dark;
+  }
+}
+
+input[type="url"] {
+  padding: 18px;
+  font-size: 2em;
+  color: $foreground;
+  border: none;
+  border-radius: 10px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  text-align: center;
+  background-color: transparent;
+  &:focus {
+    background: none;
+    border: none;
+    border-color: transparent;
+    border-style: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  &:hover {
+    border-color: #eee;
+  }
+  &.input-url {
+    margin-top: 20px;
+  }
+  &.output-url {
+    margin-top: 70px;
+  }
 }

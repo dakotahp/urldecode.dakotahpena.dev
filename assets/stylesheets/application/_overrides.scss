@@ -1,0 +1,51 @@
+// Browser placeholder colors
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: $foreground;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: $foreground;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: $foreground;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: $foreground;
+}
+
+///////////////////////////
+// Foundation
+
+html, body {
+  background-color: $background;
+}
+
+a {
+  color: $foreground;
+  &:hover {
+    color: $foreground_dark;
+    -webkit-transition:color .2s ease-in-out;
+    -moz-transition:color .2s ease-in-out;
+    -o-transition:color .2s ease-in-out;
+    transition:color .2s ease-in-out;
+  }
+}
+
+.inline-list>li>a {
+  display: inline;
+}
+
+input[type="url"] {
+  border: none;
+  border-radius: 10px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: transparent;
+  &:focus {
+    background: none;
+    border: none;
+    border-color: transparent;
+    border-style: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}

@@ -4,29 +4,37 @@
   <meta charset="utf-8">
   <title>URL Decode/Encode</title>
 
+  <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/stylesheets/normalize.css">
   <link rel="stylesheet" href="/stylesheets/foundation.min.css">
   <link rel="stylesheet" href="/stylesheets/font-awesome.min.css">
+  <link rel="stylesheet" href="/stylesheets/application.css">
 </head>
 <body>
   <section class="row">
-    <ul class="inline-list">
-      <li><a href="#encode">Encode</a></li>
-      <li><a href="#decode">Decode</a></li>
-    </ul>
+    <div class="method-select">
+      <ul class="button-group round even-4">
+        <li><a href="#decode" class="button active">Decode</a></li>
+        <li><a href="#encode" class="button">Encode</a></li>
+      </ul>
+    </div>
   </section>
 
   <section role="io-view" class="row">
-    <input role="input" type="url" placeholder="Input URL" autofocus>
-    <input role="output" type="url" placeholder="Output URL">
+    <input role="input" type="url" placeholder="Input URL" autofocus class="input-url">
+    <input role="output" type="url" placeholder="Output URL" class="output-url">
     <i class="icon-copy" role="copy-to-clipboard"></i>
   </section>
+
+  <footer class="row text-center">
+    <a href="http://adr.enal.in/">adr.enal.in Groupe</a> &middot; <a href="https://twitter.com/adr_enal_in">@adr_enal_in</a>
+  </footer>
 
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script>
   <script src="/javascripts/webtoolkit.url.js"></script>
   <script src="/javascripts/jquery.zclip.min.js"></script>
-  <script src="/javascripts/app.js"></script>
+  <script src="/javascripts/application.js"></script>
 </body>
 </html>
