@@ -46,7 +46,8 @@ input[type="url"] {
 footer.row {
   margin-top: 100px; }
   footer.row iframe {
-    margin-left: 116px; }
+    margin-left: 116px;
+    display: none; }
 
 body {
   font-family: 'Inconsolata', courier, sans-serif;
