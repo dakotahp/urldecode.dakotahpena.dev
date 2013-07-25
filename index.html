@@ -7,24 +7,24 @@
   <meta name="google-site-verification" content="hB6Q_GIiFTkyXpLycD5jJf-_Fz7oE9Sg8sutXTE_QZI" />
   <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/stylesheets/normalize.css">
-  <link rel="stylesheet" href="/stylesheets/foundation.min.css">
   <link rel="stylesheet" href="/stylesheets/font-awesome.min.css">
   <link rel="stylesheet" href="/stylesheets/application.css">
 </head>
 <body>
   <section class="row">
     <div class="method-select">
-      <ul class="button-group round even-4">
-        <li><a href="#decode" class="button active">Decode</a></li>
-        <li><a href="#encode" class="button">Encode</a></li>
+      <a href="#decode" class="button active">Decode</a> or
+      <a href="#encode" class="button">Encode</a>
       </ul>
     </div>
   </section>
 
   <section role="io-view" class="row">
     <input role="input" type="url" placeholder="Input URL" autofocus class="input-url">
-    <input role="output" type="url" placeholder="Output URL" class="output-url">
-    <i class="icon-copy" role="copy-to-clipboard"></i>
+    <div class="output-wrapper">
+      <input role="output" type="url" placeholder="Output URL" class="output-url">
+      <i class="icon-copy" id="copy-to-clipboard" role="copy-to-clipboard"></i>
+    </div>
   </section>
 
   <footer class="row text-center">
