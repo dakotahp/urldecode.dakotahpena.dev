@@ -1,17 +1,13 @@
 $ ->
   window.App = {}
 
-  App.Router =  Backbone.Router.extend(
-    routes:
-      "*method": "methodChange"
-  )
-
-  app_router = new App.Router
-  app_router.on('route:methodChange', (method)->
-    $("[role=io-view]").trigger("methodChange", [method])
-  )
-
   Backbone.history.start()
+  # Determine and preserve hash for later
+  currentHash = if window.location.hash == "" then "decode" else window.location.hash
+  # Restore hash or use default
+  window.location.hash = currentHash
+  # Set correct button to active
+  $("[role=toggle-#{currentHash.substr(1)}]").addClass("active")
 
   MainView = Backbone.View.extend(
     inputField: null
@@ -31,6 +27,7 @@ $ ->
 
     onMethodChange: (event, data)->
       @method = data
+      @input.trigger("input")
 
   )
   main_view = new MainView(
@@ -47,11 +44,24 @@ $ ->
     onClick: (event)->
       @elements.removeClass("active")
       $(event.target).addClass("active")
-      $("[role=input]").trigger("input")
   )
   button_view = new ButtonView(
     el: $(".method-select")
   )
+
+
+  #
+  # Routing
+  #
+  App.Router =  Backbone.Router.extend(
+    routes:
+      "*method": "methodChange"
+  )
+  app_router = new App.Router
+  app_router.on('route:methodChange', (method)->
+    $("[role=input]").trigger("methodChange", [method])
+  )
+
 
   $("[role=output]").click((event)->
     $(event.target).select()
