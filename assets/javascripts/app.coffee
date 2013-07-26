@@ -3,11 +3,11 @@ $ ->
 
   Backbone.history.start()
   # Determine and preserve hash for later
-  currentHash = if window.location.hash == "" then "decode" else window.location.hash
+  App.currentHash = if window.location.hash == "" then "decode" else window.location.hash.substr(1)
   # Restore hash or use default
-  window.location.hash = currentHash
+  window.location.hash = App.currentHash
   # Set correct button to active
-  $("[role=toggle-#{currentHash.substr(1)}]").addClass("active")
+  $("[role=toggle-#{App.currentHash}]").addClass("active")
 
   MainView = Backbone.View.extend(
     inputField: null
@@ -17,7 +17,7 @@ $ ->
       "input [role=input]": "renderOutput"
       "methodChange": "onMethodChange"
     initialize: ->
-      @method = "decode"
+      @method = App.currentHash
       @input = $("[role=input]")
       @output = $("[role=output]")
 
