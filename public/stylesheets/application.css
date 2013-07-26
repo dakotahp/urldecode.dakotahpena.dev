@@ -20,7 +20,7 @@ html, body {
 a {
   color: #f4579e; }
   a:hover {
-    color: #6f0a2d;
+    color: #09c2ff;
     -webkit-transition: color .2s ease-in-out;
     -moz-transition: color .2s ease-in-out;
     -o-transition: color .2s ease-in-out;
@@ -44,10 +44,13 @@ input[type="url"] {
     box-shadow: none; }
 
 footer.row {
-  margin-top: 100px; }
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-align: center; }
+  footer.row a {
+    text-decoration: none; }
   footer.row iframe {
-    margin-left: 116px;
-    display: none; }
+    margin-left: 116px; }
 
 body {
   font-family: 'Inconsolata', courier, sans-serif;

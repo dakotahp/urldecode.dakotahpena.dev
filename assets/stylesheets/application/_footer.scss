@@ -1,8 +1,12 @@
 footer.row {
   margin-top: 100px;
+  margin-bottom: 50px;
+  text-align: center;
+  a {
+    text-decoration: none;
+  }
 
   iframe {
     margin-left: 116px;
-    display: none;
   }
 }
