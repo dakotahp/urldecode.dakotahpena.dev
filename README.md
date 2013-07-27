@@ -1,13 +1,15 @@
 urldecode.io
 ============
 
+<http://urldecode.io/>
+
 Backbone.js website for decoding and encoding URLs
 
-# Server
+### Run Server
 `ruby app.rb`
 
-# SASS
+### SASS
 `sass --watch assets/stylesheets/app.scss:public/stylesheets/application.css`
 
-# Coffeescript
+### Coffeescript
 `coffee -w -c -j application.js -o public/javascripts/ assets/javascripts/`
