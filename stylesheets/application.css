@@ -1,0 +1,113 @@
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #f4579e; }
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #f4579e; }
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #f4579e; }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #f4579e; }
+
+html, body {
+  background-color: #1c1829; }
+
+a {
+  color: #f4579e; }
+  a:hover {
+    color: #09c2ff;
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out; }
+
+.inline-list > li > a {
+  display: inline; }
+
+input[type="url"] {
+  border: none;
+  border-radius: 10px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: transparent; }
+  input[type="url"]:focus {
+    background: none;
+    border: none;
+    border-color: transparent;
+    border-style: none;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+
+footer.row {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-align: center; }
+  footer.row a {
+    text-decoration: none; }
+  footer.row iframe {
+    margin-left: 116px; }
+
+body {
+  font-family: 'Inconsolata', courier, sans-serif;
+  color: #f4579e; }
+
+.row {
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto; }
+
+i.icon-copy {
+  cursor: pointer; }
+
+.method-select {
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  font-size: 3em; }
+  .method-select .button {
+    text-decoration: none; }
+  .method-select .button.active {
+    text-decoration: underline; }
+
+.output-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 70px;
+  width: 500px; }
+
+#copy-to-clipboard {
+  display: inline-block; }
+
+input[type="url"] {
+  padding: 18px;
+  font-size: 2em;
+  color: #f4579e;
+  border: none;
+  border-radius: 10px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  text-align: center;
+  background-color: transparent;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  outline: none; }
+  input[type="url"]:focus {
+    background: none;
+    border: none;
+    border-color: transparent;
+    border-style: none;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  input[type="url"]:hover {
+    border-color: #eee; }
+  input[type="url"].input-url {
+    margin-top: 20px; }
+  input[type="url"].output-url {
+    margin-top: 70px;
+    display: inline-block; }
