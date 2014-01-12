@@ -13,3 +13,4 @@ Backbone.js website for decoding and encoding URLs
 
 ### Coffeescript
 `coffee -w -c -j application.js -o public/javascripts/ assets/javascripts/`
+ 
