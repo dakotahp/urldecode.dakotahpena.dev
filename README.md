@@ -1,6 +1,6 @@
 # urldecode.dakotah.co
 
-Demo at http://urldecode.dakotah.co/
+Demo at https://urldecode.dakotah.co/
 
 Backbone.js website for decoding and encoding URLs
 
