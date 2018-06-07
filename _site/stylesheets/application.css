@@ -66,19 +66,13 @@ i.icon-copy {
 
 .method-select {
   text-align: center;
-  margin-top: 200px;
+  margin-top: 100px;
   margin-bottom: 100px;
   font-size: 3em; }
   .method-select .button {
     text-decoration: none; }
   .method-select .button.active {
     text-decoration: underline; }
-
-.output-wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 70px;
-  width: 500px; }
 
 #copy-to-clipboard {
   display: inline-block; }
@@ -87,7 +81,7 @@ input[type="url"] {
   padding: 18px;
   font-size: 2em;
   color: #f4579e;
-  border: none;
+  border: 2px solid #f4579e;
   border-radius: 10px;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -96,18 +90,13 @@ input[type="url"] {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  outline: none; }
+  outline: none;
+  width: 600px; }
   input[type="url"]:focus {
-    background: none;
-    border: none;
-    border-color: transparent;
-    border-style: none;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
-  input[type="url"]:hover {
-    border-color: #eee; }
+    border: 2px solid #f4579e; }
   input[type="url"].input-url {
     margin-top: 20px; }
   input[type="url"].output-url {
-    margin-top: 70px;
-    display: inline-block; }
+    margin-top: 70px; }
+
+/*# sourceMappingURL=application.css.map */

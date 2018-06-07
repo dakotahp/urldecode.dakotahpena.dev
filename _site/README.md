@@ -1,15 +1,10 @@
-urldecode.io
-============
+# urldecode.dakotah.co
 
-<http://urldecode.io/>
+Demo at http://urldecode.dakotah.co/
 
 Backbone.js website for decoding and encoding URLs
 
-### Run Server
-`ruby app.rb`
+## Run Locally
 
-### SASS
-`sass --watch assets/stylesheets/app.scss:public/stylesheets/application.css`
-
-### Coffeescript
-`coffee -w -c -j application.js -o public/javascripts/ assets/javascripts/`
+This depends on `foreman` to run everything using the `Procfile`. With `foreman`
+installed then you can simply run `foreman start`.
