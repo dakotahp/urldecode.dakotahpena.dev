@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 class UrlDecode extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -15,7 +14,6 @@ class UrlDecode extends Component {
   }
 
   changeMethod(event) {
-    console.log(event.target.dataset)
     this.setState({method: event.target.dataset.method});
   }
 
