@@ -31,6 +31,7 @@
     "react": "^16.14.0",
     "react-addons-update": "^15.6.3",
     "react-dom": "^16.14.0",
+    "sass": "^1.32.8",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.10"
   },
