@@ -1,3 +1,38 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decode or Encode URL Strings | urldecode.dakotahpena.dev</title>
+  <meta name="description" content="Convert URLs to decoded or encoded strings.">
+  <meta name="google-site-verification" content="hB6Q_GIiFTkyXpLycD5jJf-_Fz7oE9Sg8sutXTE_QZI">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script async defer data-website-id="d7e9dab2-7af9-4f6c-895a-3a2789af62a4" src="https://analytics.dakotahpena.dev/umami.js"></script>
+</head>
+<body>
+  <main>
+    <div class="hero">
+      <h1 class="site-title">DECODE</h1>
+      <div class="title-rule"></div>
+      <p class="site-subtitle">Convert URLs to decoded<br>or encoded strings</p>
+    </div>
+    <div class="tool-wrapper">
+      <div class="tool">
+        <nav class="toggle">
+          <a class="active" id="btn-decode">Decode</a>
+          <span class="toggle-sep">/</span>
+          <a id="btn-encode">Encode</a>
+        </nav>
+        <div class="fields">
+          <input type="text" id="input-url" placeholder="Paste URL here" autocomplete="off" spellcheck="false">
+          <span class="field-arrow">→</span>
+          <input type="text" id="output-url" placeholder="Output" readonly>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
