@@ -1,4 +1,0 @@
-name: urldecode.dakotah.co
-markdown: kramdown
-highlighter: rouge
-exclude: ['node_modules']
